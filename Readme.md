@@ -62,6 +62,27 @@ Each module contains resources with common security and compliance issues for te
 - SQL databases with public access, no SSL, no backups, no encryption
 - IAM roles with excessive permissions
 
+## Why Use tfsec, tflint, and checkov Instead of Only `terraform validate`?
+
+### `terraform validate`
+- **Purpose:** Checks if your Terraform code is syntactically correct and internally consistent.
+- **What it does:** Finds syntax errors, missing variables, or invalid references.  
+  Does **not** check for security, best practices, or cloud-specific misconfigurations.
+
+### tfsec, tflint, checkov
+- **Purpose:** Go beyond syntax—they check for security issues, best practices, and compliance.
+- **What they do:**
+  - **tfsec & checkov:** Find security risks (public buckets, open firewalls, missing encryption, etc.).
+  - **tflint:** Finds code quality issues, deprecated syntax, and provider-specific problems.
+
+### Should you use them?
+**Yes!**
+- `terraform validate` is necessary, but only checks for syntax and internal logic.
+- **tfsec, tflint, and checkov** catch real-world risks and mistakes that `terraform validate` will never find.
+- Using them together gives you much better coverage and safer infrastructure code.
+
+---
+
 ## License
 
 This repository is for educational and testing purposes only.
