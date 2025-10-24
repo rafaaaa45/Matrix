@@ -24,6 +24,7 @@ module "firewall" {
 
 module "iam" {
   source = "./modules/iam"
+  project = var.project
 }
 
 module "sql" {
