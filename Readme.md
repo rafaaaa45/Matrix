@@ -51,7 +51,7 @@ Each module contains resources with common security and compliance issues for te
 - **tflint:**  
   - [Install instructions](https://github.com/terraform-linters/tflint#installation)
 - **checkov:**  
-  - `pip install checkov` or see [official docs](https://www.checkov.io/1.Welcome/Installation.html)
+  - `pip install checkov` or see [official docs](https://github.com/bridgecrewio/checkov#installation)
 
 ## Scenarios Covered
 
