@@ -47,7 +47,7 @@ Each module contains resources with common security and compliance issues for te
 ## Tool Installation
 
 - **tfsec:**  
-  - [Install instructions](https://aquasecurity.github.io/tfsec/v1.28.14/getting-started/installation/)
+  - [Install instructions](https://github.com/aquasecurity/tfsec#installation)
 - **tflint:**  
   - [Install instructions](https://github.com/terraform-linters/tflint#installation)
 - **checkov:**  
