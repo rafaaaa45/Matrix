@@ -29,4 +29,4 @@ jobs:
           tflint --version
 
       - name: Run TFLint
-        run: tflint .
+        run: tflint --chdir .

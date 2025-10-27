@@ -26,5 +26,4 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/get_tfsec.sh | sh
 
       - name: Run tfsec
-        run: |
-          ./tfsec .
+        run: tfsec .
