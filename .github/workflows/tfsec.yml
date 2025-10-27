@@ -22,9 +22,9 @@ jobs:
           terraform_version: 1.0.0
 
       - name: Install tfsec
-        uses: aquasecurity/tfsec-action@v1
+        uses: aquasecurity/tfsec-action@v2
         with:
           version: latest
-          
+
       - name: Run tfsec
         run: tfsec .
