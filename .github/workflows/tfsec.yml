@@ -22,8 +22,9 @@ jobs:
           terraform_version: 1.0.0
 
       - name: Install tfsec
-        run: |
-          curl -sSfL https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/get_tfsec.sh | sh
-
+        uses: aquasecurity/tfsec-action@v1
+        with:
+          version: latest
+          
       - name: Run tfsec
         run: tfsec .
